@@ -122,5 +122,11 @@ ssh -N -f -L localhost:8888:localhost:PORT_NUM username@serverIP -p 10022
    
 4. Access jupyter lab by visit `localhost:8888`
 
+5. Download course materials from github
 
+   ```
+   wget https://github.com/zh-plus/SUSTech-CS308/raw/master/Lab1/lab1.ipynb
+   wget https://github.com/zh-plus/SUSTech-CS308/raw/master/Lab1/lenna.jpg
+   ```
 
+   
