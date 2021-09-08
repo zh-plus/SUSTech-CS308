@@ -125,6 +125,7 @@
 
 7. Install PyTorch
    `conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch`
+
    Official: [https://pytorch.org/](https://pytorch.org/)
 
    <img src="image\lab0\Snipaste_2021-09-07_21-21-39.png" style="zoom: 50%;" />
@@ -176,7 +177,7 @@
    jupyter lab --no-browser --port=PORT_NUM # 1024-65535
    ```
 
-   $PORT\_NUM = 1024 + (SID \; mod \; (65535 - 1024)) = 1024 + (SID \; mod \; 64511)$
+   <!-- $PORT\_NUM = 1024 + (SID \; mod \; (65535 - 1024)) = 1024 + (SID \; mod \; 64511)$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=PORT%5C_NUM%20%3D%201024%20%2B%20(SID%20%5C%3B%20mod%20%5C%3B%20(65535%20-%201024))%20%3D%201024%20%2B%20(SID%20%5C%3B%20mod%20%5C%3B%2064511)">
 
 3. Run SSH port forwarding in **local terminal**
 
