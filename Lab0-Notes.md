@@ -21,12 +21,12 @@
    `chmod 700 /disk1/cv_home/<your student ID>`
    
    <img src="image\lab0\Snipaste_2021-09-07_20-30-38.png" style="zoom:50%;" />
-   (Image from https://chmodcommand.com/chmod-700/)
+   (Image from [https://chmodcommand.com/chmod-700/](https://chmodcommand.com/chmod-700/))
    
 3. Recommended ssh management tools
 
-   - XShell: https://www.netsarang.com/en/free-for-home-school/
-   - Windows Terminal: https://github.com/microsoft/terminal
+   - XShell: [https://www.netsarang.com/en/free-for-home-school/](https://www.netsarang.com/en/free-for-home-school/)
+   - Windows Terminal: [https://github.com/microsoft/terminal](https://github.com/microsoft/terminal)
      - You can install Terminal in [Windows store](https://aka.ms/terminal): 
      - Open terminal setting:
 
@@ -34,20 +34,20 @@
      - Config your command:
 
        <img src="image\lab0\Snipaste_2021-09-07_20-45-43.jpg" style="zoom:25%;" />
-   - MobaXterm: https://mobaxterm.mobatek.net/
+   - MobaXterm: [https://mobaxterm.mobatek.net/](https://mobaxterm.mobatek.net/)
 
 
 ### Anaconda
 
 0. Download installer: `wget URL`
 
-   - Official: https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+   - Official: [https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh](https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh)
      
      (The latest URL can be retrieved in https://www.anaconda.com/products/individual-d#linux)
    - SUSTech mirror (Recommended): 
-     https://mirrors.sustech.edu.cn/anaconda/archive/Anaconda3-2021.05-Linux-x86_64.sh
+     [https://mirrors.sustech.edu.cn/anaconda/archive/Anaconda3-2021.05-Linux-x86_64.sh](https://mirrors.sustech.edu.cn/anaconda/archive/Anaconda3-2021.05-Linux-x86_64.sh)
      
-     (The latest URL can be retrieved in https://mirrors.sustech.edu.cn/anaconda/archive/)
+     (The latest URL can be retrieved in [https://mirrors.sustech.edu.cn/anaconda/archive/](https://mirrors.sustech.edu.cn/anaconda/archive/))
 
 1. Set executable: `chmod 777 Anaconda3-2021.05-Linux-x86_64.sh`
 
@@ -82,7 +82,7 @@
        simpleitk: https://mirrors.sustech.edu.cn/anaconda/cloud
      ```
 
-     (The Configuration can be find in https://mirrors.sustech.edu.cn/help/anaconda.html)
+     (The Configuration can be find in [https://mirrors.sustech.edu.cn/help/anaconda.html](https://mirrors.sustech.edu.cn/help/anaconda.html))
 
    - Exit vim:
      1. press `Esc`
@@ -114,16 +114,18 @@
 6. Create and Switch environment using Conda
 
    - Create `conda create -n <your environment name> python=3.8`
+
      **Example**: `conda create -n pytorch_env python=3.8`
 
    - Switch `conda activate <your environment name>`
+
      **Example**: `conda activate pytorch_env`
 
    - You can switch back to `base` environment using `conda deactivate`
 
 7. Install PyTorch
    `conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch`
-   Official: https://pytorch.org/
+   Official: [https://pytorch.org/](https://pytorch.org/)
 
    <img src="image\lab0\Snipaste_2021-09-07_21-21-39.png" style="zoom: 50%;" />
 
@@ -150,7 +152,6 @@
      import pytorch
      torch.cuda.is_available() # Should output True
      ```
-
 
 
 ### Tools to code remotely
@@ -193,8 +194,8 @@
 
 #### PyCharm Remote (Optional)
 
-0. Download PyCharm: https://www.jetbrains.com/pycharm/
-1. PyCharm Remote tutorial: https://zhuanlan.zhihu.com/p/93236936
+0. Download PyCharm: [https://www.jetbrains.com/pycharm/](https://www.jetbrains.com/pycharm/)
+1. PyCharm Remote tutorial: [https://zhuanlan.zhihu.com/p/93236936](https://zhuanlan.zhihu.com/p/93236936)
    - Remember to set port to 10022 instead of 22
 
 
