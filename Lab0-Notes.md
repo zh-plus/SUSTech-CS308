@@ -26,7 +26,7 @@ permalink: /notes/lab0/
    
 2. Privacy protection
    `chmod 700 /disk1/cv_home/<your student ID>`
-   <img src="image\Snipaste_2021-09-07_20-30-38.png" style="zoom:50%;" />
+   <img src="image\lab0\Snipaste_2021-09-07_20-30-38.png" style="zoom:50%;" />
    (Image from https://chmodcommand.com/chmod-700/)
    
 3. Recommended ssh management tools
@@ -37,9 +37,9 @@ permalink: /notes/lab0/
 
      - You can install Terminal in [Windows store](https://aka.ms/terminal): 
      - Open terminal setting:
-       <img src="image\Snipaste_2021-09-07_20-46-31.jpg" style="zoom:25%;" />
+       <img src="image\lab0\Snipaste_2021-09-07_20-46-31.jpg" style="zoom:25%;" />
      - Config your command:
-       <img src="image\Snipaste_2021-09-07_20-45-43.jpg" style="zoom:25%;" />
+       <img src="image\lab0\Snipaste_2021-09-07_20-45-43.jpg" style="zoom:25%;" />
      
    - MobaXterm: https://mobaxterm.mobatek.net/
 
@@ -98,7 +98,7 @@ permalink: /notes/lab0/
      4. press `Enter`
      
    - Show current used mirror: `conda config --show-sources`
-     <img src="image\Snipaste_2021-09-07_21-18-39.png" style="zoom:43%;" />
+     <img src="image\lab0\Snipaste_2021-09-07_21-18-39.png" style="zoom:43%;" />
 
 5. Set pip mirror
 
@@ -128,20 +128,20 @@ permalink: /notes/lab0/
 7. Install PyTorch
    `conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch`
    Official: https://pytorch.org/
-   <img src="image\Snipaste_2021-09-07_21-21-39.png" style="zoom: 50%;" />
+   <img src="image\lab0\Snipaste_2021-09-07_21-21-39.png" style="zoom: 50%;" />
 
 8. Check CUDA driver
 
    - Display detailed GPU info
      `nvidia-smi`
-     <img src="image\Snipaste_2021-09-07_21-24-32.png" style="zoom:30%;" />
+     <img src="image\lab0\Snipaste_2021-09-07_21-24-32.png" style="zoom:30%;" />
 
    - Display GPU info
      ```shell
      pip install gpustat
      gpustat
      ```
-     <img src="image\Snipaste_2021-09-07_21-26-42.png" style="zoom:43%;"/>
+     <img src="image\lab0\Snipaste_2021-09-07_21-26-42.png" style="zoom:43%;"/>
 
    - Verification
 
@@ -204,9 +204,9 @@ permalink: /notes/lab0/
 
 0. 申请华为云账号：https://www.huaweicloud.com/ 右上角注册
 1. 登录后实名认证
-   <img src="image\Snipaste_2021-09-07_21-57-04.png" style="zoom:33%;" />
-   <img src="image\Snipaste_2021-09-07_22-06-19.png" style="zoom:33%;" />
+   <img src="image\lab0\Snipaste_2021-09-07_21-57-04.png" style="zoom:33%;" />
+   <img src="image\lab0\Snipaste_2021-09-07_22-06-19.png" style="zoom:33%;" />
 2. 扫描二维码，登记账号信息
-   <img src="image\unnamed.png" style="zoom: 50%;" />
+   <img src="image\lab0\unnamed.png" style="zoom: 50%;" />
 3. 五个工作日内华为会发放500代金券，我们本学期将使用华为云进行实验课程，请大家暂时不要使用代金券开通任何实例。下节课程会指导使用华为云的按时计费型服务器。
 
