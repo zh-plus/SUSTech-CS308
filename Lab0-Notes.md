@@ -1,7 +1,3 @@
-layout: page
-title: "Lab0-Notes"
-permalink: /notes/lab0/
-
 # Lab0: How to Develop on a Remote Server
 
 **Lecturer: 郑浩 (RA in SUSTech Zhengfeng Lab)**
@@ -15,11 +11,8 @@ permalink: /notes/lab0/
 1. SSH to server
    `ssh -p PORT username@host`: check [here](https://explainshell.com/explain?cmd=ssh+-p+PORT+username%40host) to explain the meaning of this command
    - For example: `ssh -p 10022 11610127@127.0.0.1`
-   
    - Temporary server: (users would be deleted after this lab)
-   
      - host: 10.16.36.240
-   
      - PORT: 10022
      - username: \<your student ID\>
      - password: \<your student ID\>_cv
@@ -33,9 +26,7 @@ permalink: /notes/lab0/
 3. Recommended ssh management tools
 
    - XShell: https://www.netsarang.com/en/free-for-home-school/
-
    - Windows Terminal: https://github.com/microsoft/terminal
-
      - You can install Terminal in [Windows store](https://aka.ms/terminal): 
      - Open terminal setting:
 
@@ -43,9 +34,7 @@ permalink: /notes/lab0/
      - Config your command:
 
        <img src="image\lab0\Snipaste_2021-09-07_20-45-43.jpg" style="zoom:25%;" />
-     
    - MobaXterm: https://mobaxterm.mobatek.net/
-
 
 
 ### Anaconda
@@ -53,9 +42,11 @@ permalink: /notes/lab0/
 0. Download installer: `wget URL`
 
    - Official: https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+     
      (The latest URL can be retrieved in https://www.anaconda.com/products/individual-d#linux)
    - SUSTech mirror (Recommended): 
      https://mirrors.sustech.edu.cn/anaconda/archive/Anaconda3-2021.05-Linux-x86_64.sh
+     
      (The latest URL can be retrieved in https://mirrors.sustech.edu.cn/anaconda/archive/)
 
 1. Set executable: `chmod 777 Anaconda3-2021.05-Linux-x86_64.sh`
@@ -94,7 +85,6 @@ permalink: /notes/lab0/
      (The Configuration can be find in https://mirrors.sustech.edu.cn/help/anaconda.html)
 
    - Exit vim:
-
      1. press `Esc`
      2. press `:`
      3. input `wq`
@@ -125,8 +115,10 @@ permalink: /notes/lab0/
 
    - Create `conda create -n <your environment name> python=3.8`
      **Example**: `conda create -n pytorch_env python=3.8`
+
    - Switch `conda activate <your environment name>`
      **Example**: `conda activate pytorch_env`
+
    - You can switch back to `base` environment using `conda deactivate`
 
 7. Install PyTorch
