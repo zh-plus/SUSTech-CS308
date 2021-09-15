@@ -124,8 +124,9 @@
    - You can switch back to `base` environment using `conda deactivate`
 
 7. Install PyTorch
-   `conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch`
 
+   `conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch`
+   
    Official: [https://pytorch.org/](https://pytorch.org/)
 
    <img src="image\lab0\Snipaste_2021-09-07_21-21-39.png" style="zoom: 50%;" />
