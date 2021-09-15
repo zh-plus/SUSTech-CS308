@@ -18,13 +18,14 @@ Check the video & Lab demo.
 
 0. Start your terminal
    - WIN+R & `cmd.exe`
+     - If `ssh` not installed in windows, check: https://www.youtube.com/watch?v=xIfzZXHaCzQ
    - Click the Launchpad in the Dock, type `Terminal` in the search field, then click Terminal.
-
+   
 1. SSH to server
    `ssh -p PORT username@host`: check [here](https://explainshell.com/explain?cmd=ssh+-p+PORT+username%40host) to explain the meaning of this command
 
    - HUAWEI Cloud server:
-     - host: 
+     - host:
 
        <img src="image\lab1\Snipaste_2021-09-15_14-02-16.png" style="zoom:43%;" />
 
