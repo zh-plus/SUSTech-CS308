@@ -1,9 +1,3 @@
----
-layout: page
-title: Lab1: How to Develop on HUAWEI Cloud
----
-
-
 # Lab1: How to Develop on HUAWEI Cloud
 
 **Lecturer: 谢国洋**
@@ -18,7 +12,7 @@ Check the video & Lab demo.
 
 0. Start your terminal
    - WIN+R & `cmd.exe`
-     - If `ssh` not installed in windows, check: https://www.youtube.com/watch?v=xIfzZXHaCzQ
+     - If `ssh` not installed in windows, check: [https://www.youtube.com/watch?v=xIfzZXHaCzQ](https://www.youtube.com/watch?v=xIfzZXHaCzQ)
    - Click the Launchpad in the Dock, type `Terminal` in the search field, then click Terminal.
    
 1. SSH to server
