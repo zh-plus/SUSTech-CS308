@@ -27,9 +27,9 @@ Check the video & Lab demo.
    - HUAWEI Cloud server:
      - host: 
 
-       <img src="E:\Others\SUSTech-CS308\image\lab1\Snipaste_2021-09-15_14-02-16.png" style="zoom:43%;" />
+       <img src="image\lab1\Snipaste_2021-09-15_14-02-16.png" style="zoom:43%;" />
 
-       <img src="E:\Others\SUSTech-CS308\image\lab1\Snipaste_2021-09-15_14-07-22.png" style="zoom:43%;" />
+       <img src="image\lab1\Snipaste_2021-09-15_14-07-22.png" style="zoom:43%;" />
 
      - PORT: 22
      - username: root
@@ -193,11 +193,11 @@ Check the video & Lab demo.
 
 3. Access Jupyter Lab in browser: `http://<your host IP>:`
 
-   <img src="E:\Others\SUSTech-CS308\image\lab1\Snipaste_2021-09-15_14-14-45.png" style="zoom:55%;" />
+   <img src="image\lab1\Snipaste_2021-09-15_14-14-45.png" style="zoom:55%;" />
 
 4. The browser should be:
 
-   <img src="E:\Others\SUSTech-CS308\image\lab1\Snipaste_2021-09-15_14-20-22.png" style="zoom:43%;" />
+   <img src="image\lab1\Snipaste_2021-09-15_14-20-22.png" style="zoom:43%;" />
 
 
 
