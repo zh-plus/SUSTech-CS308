@@ -1,12 +1,11 @@
-# Lab1: How to Develop on HUAWEI Cloud
+---
+layout: page
+title: Lab0: How to Develop on HUAWEI Cloud
+---
 
-**Lecturer: 谢国洋**
+# Lab0: How to Develop on a Remote Server
 
-### How to use HUAWEI Cloud
-
-Check the video & Lab demo.
-
-
+**Lecturer: 郑浩 (RA in SUSTech Zhengfeng Lab)**
 
 ### How to connect to remote server
 
@@ -16,18 +15,18 @@ Check the video & Lab demo.
 
 1. SSH to server
    `ssh -p PORT username@host`: check [here](https://explainshell.com/explain?cmd=ssh+-p+PORT+username%40host) to explain the meaning of this command
-   
    - For example: `ssh -p 10022 11610127@127.0.0.1`
-   - HUAWEI Cloud server:
-     - host: 
-
-       <img src="E:\Others\SUSTech-CS308\image\lab1\Snipaste_2021-09-15_14-02-16.png" style="zoom:43%;" />
-
-       <img src="E:\Others\SUSTech-CS308\image\lab1\Snipaste_2021-09-15_14-07-22.png" style="zoom:43%;" />
-
-     - PORT: 22
-     - username: root
-     - password: *password you set.*
+   - Temporary server: (users would be deleted after this lab)
+     - host: 10.16.36.240
+     - PORT: 10022
+     - username: \<your student ID\>
+     - password: \<your student ID\>_cv
+   
+2. Privacy protection
+   `chmod 700 /disk1/cv_home/<your student ID>`
+   
+   <img src="image\lab0\Snipaste_2021-09-07_20-30-38.png" style="zoom:50%;" />
+   (Image from [https://chmodcommand.com/chmod-700/](https://chmodcommand.com/chmod-700/))
    
 3. Recommended ssh management tools
 
@@ -116,8 +115,6 @@ Check the video & Lab demo.
      [install]
      trusted-host=mirrors.aliyun.com
      ```
-     
-   - Exit vim as above
 
 6. Create and Switch environment using Conda
 
@@ -132,8 +129,9 @@ Check the video & Lab demo.
    - You can switch back to `base` environment using `conda deactivate`
 
 7. Install PyTorch
-   `conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch`
 
+   `conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch`
+   
    Official: [https://pytorch.org/](https://pytorch.org/)
 
    <img src="image\lab0\Snipaste_2021-09-07_21-21-39.png" style="zoom: 50%;" />
@@ -182,16 +180,22 @@ Check the video & Lab demo.
 2. Run Jupyter in **server terminal**
 
    ```shell
-   jupyter lab --no-browser --port=3388 --ip=0.0.0.0 --allow-root
+   jupyter lab --no-browser --port=PORT_NUM # 1024-65535
    ```
 
-3. Access Jupyter Lab in browser: `http://<your host IP>:`
+   <!-- $PORT\_NUM = 1024 + (SID \; mod \; (65535 - 1024)) = 1024 + (SID \; mod \; 64511)$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=PORT%5C_NUM%20%3D%201024%20%2B%20(SID%20%5C%3B%20mod%20%5C%3B%20(65535%20-%201024))%20%3D%201024%20%2B%20(SID%20%5C%3B%20mod%20%5C%3B%2064511)">
 
-   <img src="E:\Others\SUSTech-CS308\image\lab1\Snipaste_2021-09-15_14-14-45.png" style="zoom:55%;" />
+3. Run SSH port forwarding in **local terminal**
 
-4. The browser should be:
+   - open a new terminal in **you machine (NOT Server!)**
 
-   <img src="E:\Others\SUSTech-CS308\image\lab1\Snipaste_2021-09-15_14-20-22.png" style="zoom:43%;" />
+   - ```shell
+     ssh -N -f -L localhost:8888:localhost:PORT_NUM username@serverIP -p 10022
+     ```
+
+     [Explanation](https://explainshell.com/explain?cmd=ssh+-N+-f+-L+localhost%3A8888%3Alocalhost%3APORT_NUM+username%40serverIP+-p+10022#) 
+
+   -   Access Jupyter Lab by visit `localhost:8888`
 
 
 
@@ -199,4 +203,20 @@ Check the video & Lab demo.
 
 0. Download PyCharm: [https://www.jetbrains.com/pycharm/](https://www.jetbrains.com/pycharm/)
 1. PyCharm Remote tutorial: [https://zhuanlan.zhihu.com/p/93236936](https://zhuanlan.zhihu.com/p/93236936)
+   - Remember to set port to 10022 instead of 22
+
+
+
+### Huawei Cloud
+
+0. 申请华为云账号：https://www.huaweicloud.com/ 右上角注册
+1. 登录后实名认证
+
+   <img src="image\lab0\Snipaste_2021-09-07_21-57-04.png" style="zoom:33%;" />
+
+   <img src="image\lab0\Snipaste_2021-09-07_22-06-19.png" style="zoom:33%;" />
+2. 扫描二维码，登记账号信息
+
+   <img src="image\lab0\unnamed.png" style="zoom: 50%;" />
+3. 五个工作日内华为会发放500代金券，我们本学期将使用华为云进行实验课程，请大家暂时不要使用代金券开通任何实例。下节课程会指导使用华为云的按时计费型服务器。
 
