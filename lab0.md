@@ -15,13 +15,13 @@ title: Lab0: How to Develop on HUAWEI Cloud
 
 1. SSH to server
    `ssh -p PORT username@host`: check [here](https://explainshell.com/explain?cmd=ssh+-p+PORT+username%40host) to explain the meaning of this command
-   - For example: `ssh -p 10022 11610127@127.0.0.1`
+
    - Temporary server: (users would be deleted after this lab)
      - host: 10.16.36.240
      - PORT: 10022
      - username: \<your student ID\>
      - password: \<your student ID\>_cv
-   
+
 2. Privacy protection
    `chmod 700 /disk1/cv_home/<your student ID>`
    
@@ -156,7 +156,7 @@ title: Lab0: How to Develop on HUAWEI Cloud
      `python`
 
      ```python
-     import pytorch
+     import torch
      torch.cuda.is_available() # Should output True
      ```
 

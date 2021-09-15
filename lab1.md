@@ -22,8 +22,7 @@ Check the video & Lab demo.
 
 1. SSH to server
    `ssh -p PORT username@host`: check [here](https://explainshell.com/explain?cmd=ssh+-p+PORT+username%40host) to explain the meaning of this command
-   
-   - For example: `ssh -p 10022 11610127@127.0.0.1`
+
    - HUAWEI Cloud server:
      - host: 
 
@@ -34,7 +33,7 @@ Check the video & Lab demo.
      - PORT: 22
      - username: root
      - password: *password you set.*
-   
+
 3. Recommended ssh management tools
 
    - XShell: [https://www.netsarang.com/en/free-for-home-school/](https://www.netsarang.com/en/free-for-home-school/)
@@ -164,7 +163,7 @@ Check the video & Lab demo.
      `python`
 
      ```python
-     import pytorch
+     import torch
      torch.cuda.is_available() # Should output True
      ```
 
