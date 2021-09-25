@@ -1,4 +1,4 @@
-# Lab-PyCharm: How to Develop with PyCharm
+# Lab-PyCharm: How to Develop Remotely with PyCharm
 
 **Lecturer: 郑浩**
 
